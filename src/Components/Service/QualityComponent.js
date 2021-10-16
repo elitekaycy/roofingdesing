@@ -43,7 +43,8 @@ function QualityComponent() {
 
 
     return (
-        <div className="container-md d-flex flex-row flex-wrap align-items-center justify-content-center p-5 mb-5">
+        <div style={{ backgroundColor: '#F5FAFE'}}>
+        <div className="container-md d-flex flex-row flex-wrap align-items-center justify-content-center p-5" >
         <div>
             <Fade left>
             <div className="h5" style={{ color: '#0225FF'}}>- WHY US</div>
@@ -53,6 +54,7 @@ function QualityComponent() {
         </div>
         <div>
             {Qualitydata.map(data => { return ( <QualityInfo key={data.id} title={data.title} paragraph={data.paragraph} icon={data.icon} />)})}
+        </div>
         </div>
         </div>
     )

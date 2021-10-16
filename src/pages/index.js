@@ -9,6 +9,7 @@ import ProjectComponent from "../Components/Project/ProjectComponent";
 import QualityComponent from "../Components/Service/QualityComponent";
 import Location from '../Components/footer/Location'
 import Footer from "../Components/footer/Footer";
+import GalleryComponent from "../Components/Service/GalleryComponent";
 
 // markup
 const IndexPage = () => {
@@ -20,6 +21,7 @@ const IndexPage = () => {
     <Herosection />
     <AboutComponent />
     <ServiceComponent />
+    <GalleryComponent />
     <ProjectComponent />
     <QualityComponent />
     <Location />

@@ -58,7 +58,7 @@ function RoofingNavigation() {
                 </div>
               </div>
                <div className="d-flex flex-row justify-content-start align-items-center mx-auto">
-                  {['ABOUT', 'SERVICES', 'PROJECTS'].map(divnav => { return (<Fade key={divnav} top><DivNavlink>
+                  {['ABOUT', 'SERVICES', 'PROJECTS', 'GALLERY'].map(divnav => { return (<Fade key={divnav} top><DivNavlink>
                     <Link activeClass="active"  to={divnav} spy={true} smooth={true} duration={500}>
                     {divnav}
                     </Link>

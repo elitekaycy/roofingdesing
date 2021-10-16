@@ -57,8 +57,8 @@ function ProjectComponent() {
 
     return (
         <Element name="PROJECTS">
-        <div className="w-100 h-auto" style={{ backgroundColor: '#F5FAFE'}}>
-        <div className="container-md p-5">
+        <div className="w-100 h-auto" >
+        <div className="container-md p-5 pb-3">
           <Fade left> <div className="h5" style={{ color: '#0225FF'}}>- PROJECTS</div></Fade>
           <Fade left> <div className="text-wrap w-100 h1" style={{ maxWidth: 400 }}>RECENT WORKS</div> </Fade>
           <Fade left>  <p className="lead text-wrap" style={{ maxWidth: 600 }}>Minim nulla nulla dolor nulla fugiat non velit aute do enim. </p></Fade>

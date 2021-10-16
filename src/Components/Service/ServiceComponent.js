@@ -77,7 +77,7 @@ function ServiceComponent() {
         return (
         <ReactHoverObserver>
         {({ isHovering }) => (
-        <div className={`w-100 rounded-1 p-3 mb-3 mx-auto ${ highlight ? 'bg-primary': ''}`} style={{ maxWidth: 350, height: 350, cursor: 'pointer' }}>
+        <div className={` w-100 rounded-1 p-3 mb-3 mx-auto ${ highlight ? 'bg-primary': ''}`} style={{ maxWidth: 350, height: 350, cursor: 'pointer' }}>
           <div className="text-center rounded mx-auto mt-4 p-3 mb-3" style={{ width: 100, height: 100, transform: isHovering ? 'scale(1.09)' : 'scale(1)', transition: '200ms ease-in all'}}>
             <img src={icon} alt="maintenance" className="img-fluid"/>
           </div>
@@ -93,6 +93,7 @@ function ServiceComponent() {
        <Container fluid="lg" className="mt-5">
             <Fade bottom><div className="h1 font-weight-bold text-center mb-2" style={{ fontSize: 50}}> SERVICES </div></Fade>
             <Fade bottom><div className="h5 text-center mb-5" style={{ fontWeight: 'lighter'}}>PerfectChoice Roofing systems at your service</div></Fade>
+
 
            <div className="d-flex flex-row justify-content-evenly align-items-center flex-wrap mt-2 mb-5">
                { Detailedservices.map(detail => { return ( <Fade key={detail.id} bottom><SVcomponent header={detail.header} paragraph={detail.paragraph} icon={detail.icon} highlight={detail.odd}/></Fade>)})}
